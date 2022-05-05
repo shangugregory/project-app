@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46833505958",
+    "project_id": "actioneers-app",
+    "storage_bucket": "actioneers-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46833505958:android:cd3663a285faa806eb8667",
+        "android_client_info": {
+          "package_name": "com.example.actioneersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46833505958-jl0npd85c8fukp34qk4gt8hsm676n15e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrTs9r3uDh3rw1pXeNKuOcvcVKx-QNvvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46833505958-jl0npd85c8fukp34qk4gt8hsm676n15e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

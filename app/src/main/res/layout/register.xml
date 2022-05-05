@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp">
+
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:text="Register!"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!, Kindly fill all the Details"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:textStyle="italic"
+                android:gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_first_name"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:hint="Enter Your First Name"
+                    android:text="First Name"
+                    android:textColor="@color/dark_grey"
+
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_second_name"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:hint="Enter Your second Name"
+                    android:text="second Name"
+                    android:textColor="@color/dark_grey"
+
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_age"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:hint="Enter Your age"
+                    android:text="Age"
+                    android:textColor="@color/dark_grey"
+
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_id_no"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:hint="Enter Your National Id No"
+                    android:text="ID Number"
+                    android:textColor="@color/dark_grey"
+
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_user_password"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:password="true"
+                    android:text="Password"
+                    android:textColor="@color/dark_grey"
+
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_user_confirm_password"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:password="true"
+                    android:text="Password"
+                    android:textColor="@color/dark_grey"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_user_confirm_password"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:password="true"
+                    android:text="Password"
+                    android:textColor="@color/dark_grey"
+
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    android:text="Register"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/log_in_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    android:text="Log In"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

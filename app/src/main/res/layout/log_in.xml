@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp">
+
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="60dp"
+                android:text="Welcome!"
+                android:textColor="@color/black"
+                android:textSize="42dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/log_in_user_name"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:text="User Name"
+                    android:textColor="@color/dark_grey"
+                    android:hint="Enter Your User Name"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/log_in_user_password"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:password="true"
+                    android:text="Password"
+                    android:textColor="@color/dark_grey"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/log_in_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    android:text="Log In"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button"
+                    android:text="Register"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
