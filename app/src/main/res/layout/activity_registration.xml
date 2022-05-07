@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginRight="36dp">
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="40dp">
 
 
         <LinearLayout
@@ -43,7 +44,7 @@
                     android:layout_height="58dp"
                     android:background="@color/light_greyy"
                     android:gravity="center"
-                    android:text="Email"
+                    android:hint="Enter Email"
                     android:textColor="@color/dark_grey"
 
                     />
@@ -65,7 +66,6 @@
                     android:background="@color/light_greyy"
                     android:gravity="center"
                     android:hint="Enter Your Full Name"
-                    android:text="First Name"
                     android:textColor="@color/dark_grey"
 
                     />
@@ -89,7 +89,6 @@
                     android:background="@color/light_greyy"
                     android:gravity="center"
                     android:hint="Enter Your age"
-                    android:text="Age"
                     android:textColor="@color/dark_grey"
 
                     />
@@ -112,7 +111,6 @@
                     android:background="@color/light_greyy"
                     android:gravity="center"
                     android:hint="Enter Your National Id No"
-                    android:text="ID Number"
                     android:textColor="@color/dark_grey"
 
                     />
@@ -137,7 +135,27 @@
                     android:background="@color/light_greyy"
                     android:gravity="center"
                     android:password="true"
-                    android:text="Password"
+                    android:hint="Enter ID Number"
+                    android:textColor="@color/dark_grey"
+
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_confirm_user_password"
+                    android:layout_width="260dp"
+                    android:layout_height="58dp"
+                    android:background="@color/light_greyy"
+                    android:gravity="center"
+                    android:password="true"
+                    android:hint="Cornfirm ID Number"
                     android:textColor="@color/dark_grey"
 
                     tools:ignore="DuplicateIds" />

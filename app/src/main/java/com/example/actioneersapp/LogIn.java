@@ -5,33 +5,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
-
-    private ImageView profile;
+public class LogIn extends AppCompatActivity {
+    
+     TextView register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_log_in);
 
-
-        profile = (ImageView) findViewById(R.id.profile);
-
-
-
-        profile.setOnClickListener(new View.OnClickListener() {
+        register= (TextView) findViewById(R.id.txtRegister);
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this, LogIn.class);
+                Intent intent = new Intent(LogIn.this, Registration.class);
                 startActivity(intent);
             }
         });
     }
-
-
-
 }
