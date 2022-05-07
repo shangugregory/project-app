@@ -37,7 +37,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/log_in_user_name"
+                    android:id="@+id/log_in_email"
                     android:layout_width="260dp"
                     android:layout_height="58dp"
                     android:background="@color/light_greyy"
