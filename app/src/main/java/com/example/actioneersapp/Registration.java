@@ -1,5 +1,6 @@
 package com.example.actioneersapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,11 +10,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Registration extends AppCompatActivity {
 TextView logIn;
 Button register;
 EditText rgEmail, rgfName, rgLname,rgOtherName, rgAge, rgId, rgPwrd, rgConPwrd;
+FirebaseAuth fAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +29,11 @@ EditText rgEmail, rgfName, rgLname,rgOtherName, rgAge, rgId, rgPwrd, rgConPwrd;
 
         logIn=(TextView) findViewById(R.id.txtLogIn);
         register=(Button) findViewById(R.id.register_btn);
+        fAuth=FirebaseAuth.getInstance();
+        if (fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,6 +101,21 @@ EditText rgEmail, rgfName, rgLname,rgOtherName, rgAge, rgId, rgPwrd, rgConPwrd;
                     rgPwrd.setError("Password Missmartch");
                     return;
                 }
+
+                fAuth.createUserWithEmailAndPassword(rEmail, rPwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()){
+                            Toast.makeText(Registration.this, "Registration Complete!", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(Registration.this, MainActivity.class);
+                            startActivity(intent);
+                        }
+                        else{
+                            Toast.makeText(Registration.this, "Error!"+task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                });
 
 
             }
